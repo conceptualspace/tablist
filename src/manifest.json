@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+
+  "name": "tab list",
+  "description": "Show a list of open tab URLs for easy backup",
+  "version": "1.0",
+  "author": "dev@conceptualspace.net",
+
+  "applications": {
+    "gecko": {
+      "id": "tablist@conceptualspace.net"
+    }
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "List Tabs"
+  },
+  "permissions": [
+    "activeTab", "tabs"
+  ]
+}
