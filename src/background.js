@@ -5,6 +5,6 @@ window.browser = (function () {
 
 browser.browserAction.onClicked.addListener(function(tab) {
     browser.tabs.create({
-        url: 'tablist.html?tabId=' + tab.id
+        url: 'tablist.html'
     });
 });
