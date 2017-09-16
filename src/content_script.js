@@ -7,7 +7,7 @@ var tabList = '';
 
 browser.tabs.query({}, function(tabs) {
     for (var i=0; i<tabs.length; ++i) {
-        if (!tabs[i].url.startsWith("chrome")) {
+        if ( !tabs[i].url.startsWith("chrome") && !tabs[i].url.startsWith("moz") && !tabs[i].url.startsWith("about") ) {
             tabList += '<a href="' + tabs[i].url + '">' + tabs[i].url + '</a><br>';
         }
     }
