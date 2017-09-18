@@ -6,8 +6,9 @@ window.browser = (function () {
 browser.tabs.query({}, function(tabs) {
     for (var i=0; i<tabs.length; ++i) {
         if ( !tabs[i].url.startsWith("chrome") && !tabs[i].url.startsWith("moz") && !tabs[i].url.startsWith("about") ) {
-            document.getElementById("list").appendChild(document.createTextNode(tabs[i].url));
-            document.getElementById("list").appendChild(document.createElement('br'));
+            var p = document.createElement('p');
+            p.appendChild(document.createTextNode(tabs[i].url));
+            document.getElementById('list').appendChild(p);
         }
     }
 });
