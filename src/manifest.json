@@ -3,7 +3,7 @@
 
   "name": "tab list",
   "description": "Show a list of open tabs for easy backup",
-  "version": "1.2",
+  "version": "1.3",
   "author": "dev@conceptualspace.net",
 
   "background": {
@@ -15,6 +15,6 @@
     "default_title": "List Tabs"
   },
   "permissions": [
-    "activeTab", "tabs"
+    "tabs"
   ]
 }
